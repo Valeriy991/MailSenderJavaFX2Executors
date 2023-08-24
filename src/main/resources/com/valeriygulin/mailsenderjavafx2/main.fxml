@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.valeriygulin.mailsenderjavafx2.controllers.MainController">
+    <children>
+        <Button layoutX="32.0" layoutY="307.0" mnemonicParsing="false" onAction="#buttonSendMessages" prefHeight="46.0"
+                prefWidth="535.0" text="Send messages"/>
+        <TextField fx:id="textFieldTo" layoutX="32.0" layoutY="36.0" prefHeight="83.0" prefWidth="535.0"/>
+        <TextField fx:id="textFieldText" layoutX="32.0" layoutY="137.0" prefHeight="158.0" prefWidth="535.0"/>
+        <Label layoutX="32.0" layoutY="14.0" text="to:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Label layoutX="34.0" layoutY="117.0" text="text:">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <Button layoutX="35.0" layoutY="361.0" mnemonicParsing="false" onAction="#buttonCleanAllFields"
+                text="Clean all fields"/>
+        <Button layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onAction="#buttonGenerateAll"
+                text="Generate All"/>
+    </children>
+
+</AnchorPane>
